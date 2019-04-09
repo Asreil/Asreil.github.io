@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Тестовое задание</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ <div class="test-task">
+  <header class="header s-100">
+    <div class="row">
+      <aside class="sidebar"></aside>
+
+      <nav class="header__navigation">
+        <a href="#" class="item text-accent">Личный кабинет</a>
+
+        <a href="#" class="item text-success">Раздел 1</a>
+
+        <a href="#" class="item text-primary">Раздел 2</a>
+
+        <a href="#" class="item text-warning">Раздел 3</a>
+
+        <a href="#" class="item text-secondary">Раздел 4</a>
+
+        <a href="#" class="item text-danger">Раздел 5</a>
+      </nav>
+    </div>
+  </header>
+  
+  <div class="main s-100">
+    <div class="row">
+      <aside class="sidebar">
+        <p class="paragraph">
+          Здесь вы подберете нужный товар, сравните цены на него и решите, в каком интернет-магазине сделать покупку. 
+          Вашими главными помощниками в выборе товара будут умные фильтры и гиды покупателя. Также вам помогут отзывы реальных 
+          покупателей о товарах и магазинах, разнообразные возможности сортировки и отбора предложений. 
+        </p>
+
+        <p class="paragraph">
+          С помощью сервиса Hotline Checkout можно оплатить товар картой прямо на hotline.ua. При этом деньги 
+          блокируются на счету и списываются только после получения заказа от интернет-магазина, предложение которого вы выбрали. 
+        </p>
+
+        <p class="paragraph">
+          Зарегистрируйтесь на hotline.ua и получайте бонусы, составляйте списки покупок, участвуйте в активностях наших партнеров.
+        </p>
+
+        <p class="paragraph">
+          Желаем приятного интернет-шопинга и выгодных покупок!
+        </p>
+      </aside>
+      
+      <div class="main__form">
+        <form action="#" class="form">
+          <section class="steps">
+			<div class="row">
+              <div class="cell-sm">
+                <span class="steps__label">Заполните форму</span>
+              </div>
+              
+              <div class="cell-md" >
+                <div class="steps__breadcrumbs">
+                  <div class="item gone">1</div>
+                  <div class="item gone">2</div>
+                  <div class="item active bg-success">3</div>
+                  <div class="item">4</div>
+                  <div class="item">5</div>
+                </div>
+              </div>
+            </div>
+          </section>
+          
+          <section class="info">
+            <span class="label">
+              Общая информация
+            </span>
+
+            <div class="line">
+              <hr/>
+            </div>
+          </section>
+          
+          <section class="credentials">
+            <div class="row">  
+              <div class="lastname cell-sm">
+                <p class="label">Фамилия</p>
+
+                <input type="text" placeholder="Иванов" name="lastname">
+              </div>
+
+              <div class="firstname cell-sm">
+                <p class="label">Имя</p>
+
+                <input type="text" name="firstname">
+              </div>
+
+              <div class="middlename cell-sm">
+                <p class="label">Отчество</p>
+
+                <input type="text" name="middlename">
+              </div>
+            </div>
+            
+            <div class="row">
+              <div class="name-change cell-sm">
+                <p class="label">Меняли фамилию?</p>
+                <label class="custom-radio">
+                  <span class="caption">Да</span>
+
+                  <input type="radio" name="name-change" value="yes">
+                </label>
+
+                <label class="custom-radio active">
+                  <span class="caption">Нет</span>
+
+                  <input type="radio" name="name-change" value="no" checked>
+                </label>
+              </div>
+
+              <div class="gender cell-sm">
+                <p class="label">Пол</p>
+
+                <label class="custom-radio active">
+                  <span class="caption">Муж</span>
+
+                  <input type="radio" name="gender" value="male" checked>
+                </label>
+
+                <label class="custom-radio">
+                  <span class="caption">Жен</span>
+
+                  <input type="radio" name="gender" value="female">
+                </label>  
+              </div>
+
+              <div class="family-status cell-sm">
+                <p class="label">Семейное положение</p>
+
+                <select name="married">
+                  <option value="married">Женат/Замужем</option>
+                  <option value="not-married">Неженат/Незамужем</option>
+                </select>
+              </div>
+            </div>
+            
+            <div class="row">
+              <div class="nationality cell-sm">
+                <p class="label">Гражданство</p>
+                
+                <select name="nationality">
+                  <option value="ua">Украина</option>
+                  <option value="ru">Россия</option>
+                </select>
+              </div>
+
+              <div class="birthdate cell-md">
+                <p class="label">Дата рождения</p>
+               
+                <select class="day" name="day">
+                  <option value="11">11</option>
+                  <option value="12">12</option>
+                  <option value="13">13</option>
+                </select>
+
+                <select class="month" name="month">
+                  <option value="june">июня</option>
+                  <option value="july">июля</option>
+                  <option value="august">августа</option>
+                </select>
+
+                <select class="year" name="year">
+                  <option value="1970">1970</option>
+                  <option value="1971">1971</option>
+                </select>
+              </div>
+            </div>
+            
+            <div class="row">
+              <div class="s-100">
+                <div class="birthplace">
+                  <p class="label">Место рождения</p>
+
+                  <input type="text" name="birthplace">
+                </div>
+              </div>
+            </div>
+          </section>
+          
+          <section class="to-step">
+            <button class="btn btn-md backward">← Назад</button>
+            
+            <button class="btn btn-md next bg-success">Далее →</button>
+            
+<!--
+            <button class="btn btn-md next" type="submit" value="Далее →">Далее →</button>
+            <a href="#" class="btn btn-md next" >Далее →</a>
+-->
+          </section>
+        </form>
+      </div>
+    </div>
+  </div>
+ </div>
+ 
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+ <script src="index.js"></script>
+</body>
+</html>

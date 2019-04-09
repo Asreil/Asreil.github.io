@@ -1,0 +1,7 @@
+.loopingClass (@index) when (@index <= 100) {
+  .s-@{index} { 
+    width: @index + 0%; 
+    }
+	.loopingClass(@index + 1);
+}
+.loopingClass (0);

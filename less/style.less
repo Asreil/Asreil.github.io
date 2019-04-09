@@ -1,0 +1,221 @@
+// out: ../style.css, compress: true
+
+body {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+@import "helpers/grid.less";
+@import "helpers/colors.less";
+@import "helpers/btns.less";
+
+.custom-radio {
+  padding: 2px 4px;
+  margin-right: 2px;
+  position: relative;
+  cursor: pointer;
+  border-radius: 5px;
+  
+  .caption {
+    text-decoration: underline;
+  }
+  
+  input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+  }
+  
+  &.active {
+    background-color: #a1d506;
+    color: white;
+    
+    .caption {
+      text-decoration: none;
+    }
+  }
+}
+
+.test-task {
+  margin: 0 auto;
+  padding: 60px 20px;
+  width: 100%;
+  box-sizing: border-box;
+  
+  .row {
+    display: flex;
+  }  
+  
+  .sidebar {
+    margin-right: 40px;
+    width: 200px;
+    min-width: 200px;
+  }
+  
+  header {
+    margin-bottom: 50px;
+    
+    .header__navigation {
+      padding: 10px 40px 20px 40px;
+      display: flex;
+      flex-grow: 1;
+      justify-content: space-between;
+      border-radius: 15px;
+      box-shadow: 0 1px 5px rgba(0,0,0,0.3);
+      
+      .item {
+        font-weight: 500;
+        
+        &:hover {
+          opacity: 0.8;
+        }
+      }
+    }
+  }
+  
+  .main {
+    .sidebar {
+      .paragraph {
+        margin-top: 0;
+        font-size: 14px;
+        font-weight: 500;
+      }
+    }
+    
+    .main__form {
+      flex-grow: 1;
+      font-size: 14px;
+      
+      .row {
+        justify-content: space-between;
+      }
+      
+      .cell-sm {
+          width: 30%;
+        }
+        
+        .cell-md {
+          width: 65%;
+        }
+      
+      input[type="radio"], select, button {
+        cursor: pointer;
+      }
+      
+      input[type="text"], select {
+        padding: 3px 5px;
+        width: 100%;
+        border-radius: 2px;
+        border: 1px solid #d4d6d8;
+        box-sizing: border-box;
+      }
+      
+      .steps {
+        margin-bottom: 40px;
+        
+        .row {
+          margin-bottom: 10px;
+        }
+        
+        .steps__label {
+          font-size: 28px;
+          font-weight: 500;
+        }
+        
+        .steps__breadcrumbs {
+          padding-top: 10px;
+          display: flex;
+          
+          .item {
+            flex: 1;
+            text-align: center;
+            border-right: 1px solid white;
+            box-shadow: 0 2px 1px rgba(0,0,0,0.3) inset;
+            font-style: italic;
+            color: #a0a1a1;
+            
+            &.gone {
+              background-color: #3bac19;
+              color :white;
+            }
+            
+            &.active {
+              color: white;
+            }
+            
+            &:first-child {
+              border-radius: 5px 0 0 5px;
+            }
+            
+            &:last-child {
+              border-radius: 0 5px 5px 0;
+              border-right: none;
+            }
+          }
+        }
+      }
+      
+      .info {
+        display: flex;
+        margin-bottom: 20px;
+        
+        .label {
+          margin-right: 20px;
+          font-style: italic;
+          color: #a0a1a1;
+        }
+
+        .line {
+          flex-grow: 1;
+          
+          hr {
+            display: block;
+            height: 1px;
+            border: 0;
+            border-top: 1px solid #e1e1e1;
+          }
+        }
+      }
+      
+      .credentials {
+        margin-bottom: 50px;
+        
+        .cell-sm, .cell-md {
+          margin-bottom: 20px;
+        }
+        
+        .label {
+          margin: 0 0 10px 0;
+          font-weight: 700;
+        }
+        
+        ::-webkit-input-placeholder {
+          color: #d9d9d9;
+        }
+        ::-moz-input-placeholder {
+          color: #d9d9d9;
+        }
+        ::-ms-input-placeholder {
+          color: #d9d9d9;
+        }
+        
+        .birthdate {
+          select {
+            width: auto;
+          }
+        }
+      }
+      
+      .to-step {
+        display: flex;
+        justify-content: space-between;
+        
+        .backward {
+          background-color: #adadad;
+        }
+      }
+    }
+  }
+  
+  @import "media/main.less";
+}

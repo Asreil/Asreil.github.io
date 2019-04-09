@@ -1,0 +1,88 @@
+@media (min-width: 1024px) {
+  padding: 60px 0;
+  width: 1024px;
+}
+
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (max-width: 1023px) {
+  .header {
+    .sidebar {
+      display: none;
+    }
+  }
+
+  .main {
+    .main__form {
+      .cell-sm{
+          width: 48%;
+        }
+
+      .cell-md {
+        width: 100%;
+      }
+
+      .form {
+        .row {
+          flex-wrap: wrap;
+        }
+      }
+    }
+  }
+}
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media screen and (max-width: 767px) {
+  .header {
+    .header__navigation {
+      flex-wrap: wrap;
+      justify-content: space-around;
+
+      .item {
+        margin-bottom: 10px;
+      }
+    }
+  }
+
+  .main {
+    >.row {
+      flex-wrap: wrap;
+
+      .sidebar {
+        margin-right: 0;
+        margin-bottom: 50px;
+        width: 100%;
+      }
+    }
+  }
+}
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (max-width: 480px) {
+  .btn-md {
+    width: 100px;
+  }
+  
+  .main {
+    .main__form {
+      .cell-sm {
+        width: 100%;
+      }
+
+      .name-change, .gender {
+        text-align: center;
+      }
+    }
+  }
+}
