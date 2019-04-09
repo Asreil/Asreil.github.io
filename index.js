@@ -21,7 +21,7 @@ toNextStep.on("click", event => {
   $.ajax({
     type: "POST",
     url: window.location.href,
-    data: form.serialize(),
+    data: $(".main__form .form").serialize(),
     success: function() {
       console.log("Data was successfuly sent");
     },
@@ -36,7 +36,7 @@ toPreviousStep.on("click", event => {
   
   $.ajax({
     type: "GET",
-    url: window.location.href + "/back",
+    url: window.location.href + "back",
     success: function(response) {
       form.innerHTML = response.content;
     },
